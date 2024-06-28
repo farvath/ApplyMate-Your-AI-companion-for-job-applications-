@@ -1,7 +1,7 @@
 ## ApplyMate:  Your AI companion for job applications          
 This project focuses on developing a conversational AI chatbot designed to enhance the job application process by effectively answering common candidate queries and guiding users through the various stages of applying for a job. Leveraging Natural Language Processing (NLP), the chatbot can understand and respond to user inputs with accuracy and relevance. The aim is to streamline the job application process for candidates, making it more efficient and user-friendly through the use of advanced conversational AI technologies.
 
-
+The chatbot is designed to collect and store applicant details in a structured manner. The collected information includes the applicant's full name, mobile number, email address, and a link to their resumes. This information is stored in a CSV file, making it easy to manage and review applicant data.
 
 ## Features
 1. **Candidate Query Handling:** 
@@ -18,7 +18,8 @@ This project focuses on developing a conversational AI chatbot designed to enhan
 4. **Custom Actions:** 
     Includes tailored responses and actions such as greeting users, providing job descriptions, and offering company information.
 
-
+5. **Applicant Details Storage**:
+   The chatbot collects applicant details (full name, mobile number, email, and resume link or PDF) and stores them in a CSV file for easy access and management.
 
 ## Technologies Used
 1. **Rasa:** For building and deploying the conversational AI.
