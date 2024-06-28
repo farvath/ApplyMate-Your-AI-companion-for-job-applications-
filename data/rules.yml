@@ -1,0 +1,81 @@
+version: "2.0"
+
+rules:
+- rule: Handle Greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Handle Job Openings Inquiry
+  steps:
+  - intent: job_openings
+  - action: utter_job_openings
+
+- rule: Handle Application Process Inquiry
+  steps:
+  - intent: apply_job
+  - action: utter_apply_job
+
+- rule: Handle Resume Submission Inquiry
+  steps:
+  - intent: submit_resume
+  - action: utter_submit_resume
+
+- rule: Handle Interview Scheduling Inquiry
+  steps:
+  - intent: interview_schedule
+  - action: utter_interview_schedule
+
+- rule: Handle Application Status Check Inquiry
+  steps:
+  - intent: check_status
+  - action: utter_check_status
+
+- rule: Handle Company Information Inquiry
+  steps:
+  - intent: company_info
+  - action: utter_company_info
+
+- rule: Handle Salary Inquiry
+  steps:
+  - intent: inquire_salary
+  - action: utter_inquire_salary
+
+- rule: Handle Benefits Inquiry
+  steps:
+  - intent: inquire_benefits
+  - action: utter_inquire_benefits
+
+- rule: Handle Location Inquiry
+  steps:
+  - intent: inquire_location
+  - action: utter_inquire_location
+
+- rule: Handle Goodbye
+  steps:
+  - intent: thank_you
+  - action: utter_thank_you
+
+- rule: Provide job application details
+  steps:
+  - intent: provide_details
+  - action: action_job_application
+  - action: utter_application_saved
+
+- rule: Handle out-of-scope queries
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+
+- rule: Handle bot introduction
+  steps:
+  - action: utter_iamabot
+
+- rule: Handle retry details request
+  steps:
+  - action: utter_ask_retry_details
+
+- rule: Respond to Inquire Requirements
+  steps:
+  - intent: inquire_requirements
+  - action: utter_inquire_requirements

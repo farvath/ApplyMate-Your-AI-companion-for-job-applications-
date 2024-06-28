@@ -1,0 +1,82 @@
+- story: Inquire about salary
+  steps:
+  - intent: inquire_salary
+  - action: utter_inquire_salary
+
+- story: Inquire about benefits
+  steps:
+  - intent: inquire_benefits
+  - action: utter_inquire_benefits
+
+- story: Inquire about location
+  steps:
+  - intent: inquire_location
+  - action: utter_inquire_location
+
+- story: Inquire about job openings and then salary
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: job_openings
+  - action: utter_job_openings
+  - intent: inquire_salary
+  - action: utter_inquire_salary
+
+- story: Apply for a job and then inquire about benefits
+  steps:
+  - intent: apply_job
+  - action: utter_apply_job
+  - intent: inquire_benefits
+  - action: utter_inquire_benefits
+
+- story: Check application status and then inquire about location
+  steps:
+  - intent: check_status
+  - action: utter_check_status
+  - intent: inquire_location
+  - action: utter_inquire_location
+
+- story: Provide job application details and inquire about salary
+  steps:
+  - intent: provide_details
+  - slot_was_set:
+      - data: "John Doe,johndoe@example.com,Data Scientist,https://example.com"
+  - action: action_job_application
+  - action: utter_application_saved
+  - intent: inquire_salary
+  - action: utter_inquire_salary
+
+- story: Inquire about company info and then inquire about benefits,salray
+  steps:
+  - intent: company_info
+  - action: utter_company_info
+  - intent: inquire_benefits
+  - action: utter_inquire_benefits
+  - intent: inquire_salary
+  - action: utter_inquire_salary
+
+- story: Handle retry details request
+  steps:
+  - action: utter_ask_retry_details
+
+- story: Handle bot introduction
+  steps:
+  - action: utter_iamabot
+
+- story: User asks for job openings, bot introduces itself, user requests clarification
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: job_openings
+  - action: utter_job_openings
+  - intent: out_of_scope
+  - action: utter_iamabot
+  - intent: out_of_scope
+  - action: utter_ask_retry_details
+  - intent: thank_you
+  - action: utter_thank_you
+
+- story: User asks about job requirements
+  steps:
+  - intent: inquire_requirements
+  - action: utter_inquire_requirements

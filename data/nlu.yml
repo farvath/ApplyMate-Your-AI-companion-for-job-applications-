@@ -1,0 +1,132 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - hey
+    - good morning
+    - good evening
+    - hey there
+
+- intent: job_openings
+  examples: |
+    - what jobs are available?
+    - list of job openings
+    - current vacancies
+    - available positions
+    - job opportunities
+    - what positions do you have ?
+    - show me the available jobs
+    - any job vacancies?
+    - open positions
+    - current job listings
+    - job openings right now
+    - what jobs are currently open?
+    - I'm looking for job opportunities
+    - are there any jobs I can apply for?
+
+- intent: apply_job
+  examples: |
+    - how do I apply for a job?
+    - application process
+    - steps to apply
+    - how can I apply for a position?
+    - how to apply for a job?
+    - Software Engineer
+    - Data Scientist
+    - Product Manager
+    
+
+- intent: submit_resume
+  examples: |
+    - how can I submit my resume?
+    - where to upload my CV?
+    - resume submission guidelines
+    - upload resume
+    - how can i submit my details?
+
+- intent: interview_schedule
+  examples: |
+    - schedule an interview
+    - book an interview slot
+    - interview scheduling
+    - any interveiw schedule ?
+
+- intent: check_status
+  examples: |
+    - application status
+    - follow up on my application
+    - check my application status
+    - status of my application
+
+- intent: company_info
+  examples: |
+    - tell me about the company
+    - company culture and benefits
+    - what is it like to work here?
+    - company values
+    - employee benefits
+
+
+
+- intent: provide_details
+  examples: |
+    - My name is John Doe, my email is john@gmail.com, I'm interested in the Software Engineer position, and my resume link is https://googledriver.com.
+    - John, John, applying for Software Engineer, resume at https://googledrive.com.
+    - I'm John, you can reach me at John2@gmail.com, interested in Software Engineer, and here is my resume: https://googledrive.com.
+    - farvath , farvath10@gmail.com,product manager,https:/drive/resuem.
+    - [farvath , farvath10@gmail.com,product manager,https:/drive/resuem]
+
+- intent: inquire_salary
+  examples: |
+    - What is the salary range for this position?
+    - Can you tell me about the compensation package?
+    - Salary details
+    - Pay scale for the job
+    - what is the package ?
+
+- intent: inquire_benefits
+  examples: |
+    - What benefits are offered?
+    - Tell me about the employee benefits
+    - Benefits package details
+    - Perks and benefits
+
+- intent: inquire_requirements
+  examples: |
+    - What are the requirements for this job?
+    - Skills needed
+    - Qualifications required
+    - Job prerequisites
+    - is there any experience required
+    - is it open for fresher?
+
+- intent: inquire_location
+  examples: |
+    - Where is the job located?
+    - Location of the job
+    - Office location
+    - Worksite address
+    - transport facilities?
+    - landmarks
+    - known places?
+
+- intent: thank_you
+  examples: |
+    - Thanks
+    - Thank you
+    - Appreciate it
+    - Thanks a lot
+    - Thank you so much
+    - Thanks for your help
+    - Thanks, that's helpful
+    - Thank you very much
+    - goodbye
+    - see you later
+    - bye
+    - have a nice day
+    - talk to you later
+
+
