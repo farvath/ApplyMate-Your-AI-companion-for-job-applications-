@@ -1,0 +1,95 @@
+version: '3.1'
+
+intents:
+  - greet
+  - job_openings
+  - apply_job
+  - submit_resume
+  - interview_schedule
+  - check_status
+  - company_info
+  - provide_details
+  - inquire_salary
+  - inquire_benefits
+  - inquire_location
+  - thank_you
+  - inquire_requirements
+
+
+slots:
+  data:
+    type: text
+    mappings:
+      - type: from_text
+
+
+responses:
+  utter_greet:
+    - text: "hey, I can help you with your job application . To get Started Please Check for Open Positions or you can Know more about the Company"
+  utter_job_openings:
+    - text: "We have openings in the following positions: Software Engineer, Data Scientist, Product Manager. Which one are you interested in?"
+  utter_apply_job:
+    - text: "You can apply for a job by providing your details. May I have your name, email, job position you are interested in, and resume link? Please Submit it in the following format [Name,Email,Job Position,Resume]"
+  utter_submit_resume:
+    - text: "You can Submit the Resume via the bot or you can create a New application form on our careers page."
+  utter_interview_schedule:
+    - text: "You can schedule an interview by clicking on the link sent to your email after your application is reviewed."
+    - text: "A link will be sent to your email after your application is reviewed."
+  utter_check_status:
+    - text: "To check your application status, please log in to your profile on our careers portal."
+    - text: "You can view your application status by logging into our careers portal with your credentials."
+    - text: "For updates on your application status, visit our careers portal and sign in to your account."
+  utter_company_info:
+    - text: "Our company values innovation and teamwork. We offer competitive benefits including health insurance, paid time off, and professional development opportunities."
+    - text: "At our company, we foster a culture of innovation and collaboration. Employees enjoy comprehensive benefits such as health insurance, generous paid time off, and ongoing professional development."
+  utter_application_saved:
+    - text: "Application details saved."
+    - text: "Your application details have been successfully saved."
+    - text: "We've saved your application information."
+    - text: "If your profile matches our requirements, our recruiters will soon reach out to you."
+    - text: "Thank you applying . Our recruiters will soon reach out to you."
+  utter_iamabot:
+    - text: "I am a bot that can help you with your job application process. How can I assist you today?"
+  utter_out_of_scope:
+    - text: "I'm sorry, I couldn't understand that. Could you please rephrase or ask another question?"
+  utter_ask_retry_details:
+    - text: "I couldn't understand the details . Can you share it again with the correct format"
+  utter_inquire_salary:
+    - text: "The salary range for this position typically starts at 4LPA per year"
+    - text: "Our compensation packages vary by role. Are you interested in specific details for a particular job?"
+    - text: "Salary details depend on the position and experience. We can provide more information once you specify the role you're interested in."
+  utter_inquire_benefits:
+    - text: "We offer a comprehensive benefits package including health insurance, retirement plans, and more. Would you like to know specific details?"
+    - text: "Our benefits package is designed to support our employees' well-being and includes perks like health insurance, paid leaves, performance bonuses and many more..."
+    - text: "We pride ourselves on promoting innovation and teamwork within our company. Employees benefit from a robust package of perks including health insurance, ample paid time off, and continuous opportunities for career growth."
+  utter_inquire_location:
+    - text: "Our office is located at Bangalore. Would you like more information about the location?"
+    - text: "The job is located at our bangalore  office. It's conveniently located near whtefield and Marathahalli metro station ."
+  utter_inquire_requirements:
+    - text: "The requirements for this job include specific skills and qualifications tailored to the role. "
+    - text: "We are looking for candidates with relevant skills and qualifications for this position. ?"
+    - text: "The job prerequisites may vary based on the role. Could you please provide more details on the specific job title or department you are interested in?"
+    - text: "For this position, we typically look for candidates with specific qualifications and experience. ?"
+  utter_thank_you:
+    - text: "You're welcome!"
+    - text: "Glad I could help!"
+    - text: "You're welcome! If you have any more questions, feel free to ask."
+    - text: "No problem at all!"
+    - text: "You're welcome. Let me know if there's anything else I can assist you with."
+
+
+
+
+
+actions:
+  - utter_greet
+  - utter_job_openings
+  - utter_apply_job
+  - utter_submit_resume
+  - utter_interview_schedule
+  - utter_check_status
+  - utter_company_info
+  - action_job_application
+  - utter_ask_retry_details
+  - utter_thank_you
+  - utter_inquire_requirements
