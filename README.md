@@ -75,5 +75,5 @@ This project focuses on developing a conversational AI chatbot designed to enhan
     ```
 
 ## Ouptut
-<img src="https://github.com/farvath/ApplyMate-Your-AI-companion-for-job-applications-/blob/main/images/interface.jpg" width="400px" height="600px" alt="alt text">
-<img src="https://github.com/farvath/ApplyMate-Your-AI-companion-for-job-applications-/blob/main/images/interface1.jpg" width="400px" height="600px" alt="alt text">
+<img src="https://github.com/farvath/ApplyMate-Your-AI-companion-for-job-applications-/blob/main/images/interface.jpg"  alt="alt text">
+<img src="https://github.com/farvath/ApplyMate-Your-AI-companion-for-job-applications-/blob/main/images/interface1.jpg" width="720px" height="720" alt="alt text">
