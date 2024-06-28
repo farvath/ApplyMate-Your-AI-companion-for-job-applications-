@@ -31,7 +31,7 @@ This project focuses on developing a conversational AI chatbot designed to enhan
 
 ## Folder Structure
 
-<img src="https://github.com/farvath/Candidate-Matching/blob/main/interface_results/output.jpg" width="400px" height="400px" alt="alt text">
+<img src="https://github.com/farvath/ApplyMate-Your-AI-companion-for-job-applications-/blob/main/images/folder.jpg" width="400px" height="400px" alt="alt text">
  
 1. **actions/actions.py** : This directory contains your custom action code. Custom actions are Python functions that execute specific tasks, such as querying a database or performing calculations.
 
@@ -75,5 +75,5 @@ This project focuses on developing a conversational AI chatbot designed to enhan
     ```
 
 ## Ouptut
-<img src="https://github.com/farvath/Candidate-Matching/blob/main/interface_results/output.jpg" width="400px" height="400px" alt="alt text">
-<img src="https://github.com/farvath/Candidate-Matching/blob/main/interface_results/output.jpg" width="400px" height="400px" alt="alt text">
+<img src="https://github.com/farvath/ApplyMate-Your-AI-companion-for-job-applications-/blob/main/images/interface.jpg" width="400px" height="400px" alt="alt text">
+<img src="https://github.com/farvath/ApplyMate-Your-AI-companion-for-job-applications-/blob/main/images/interface1.jpg" width="400px" height="400px" alt="alt text">
